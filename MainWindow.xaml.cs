@@ -20,9 +20,20 @@ namespace Vadean_Flaviu_Lab2
     /// </summary>
     public partial class MainWindow : Window
     {
+        private DoughnutMachine myDoughnutMachine;
+        private int mRaisedGlazed;
+        private int mRaisedSugar;
+        private int mFilledLemon;
+        private int mFilledChocolate;
+        private int mFilledVanilla;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void rmMain_Loaded(object sender, RoutedEventArgs e)
+        {
+            myDoughnutMachine = new DoughnutMachine();
         }
     }
 }
